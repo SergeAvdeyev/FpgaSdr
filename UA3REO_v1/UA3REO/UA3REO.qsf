@@ -1,0 +1,124 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+# Date created = 17:58:56  March 31, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		UA3REO_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22E22C8
+set_global_assignment -name TOP_LEVEL_ENTITY UA3REO
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:58:56  MARCH 31, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
+
+
+
+set_global_assignment -name ENABLE_LOGIC_ANALYZER_INTERFACE OFF
+set_global_assignment -name USE_LOGIC_ANALYZER_INTERFACE_FILE debugger1.lai
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name USE_SIGNALTAP_FILE stp_debugger.stp
+set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name DEVICE_MIGRATION_LIST EP4CE22E22C8
+set_location_assignment PIN_85 -to LED4
+set_location_assignment PIN_83 -to LED3
+set_location_assignment PIN_77 -to LED2
+set_location_assignment PIN_76 -to LED1
+set_location_assignment PIN_23 -to clk_sys
+set_location_assignment PIN_121 -to ADC_CLK
+set_location_assignment PIN_101 -to ADC_OTR
+set_location_assignment PIN_103 -to ADC_INPUT[11]
+set_location_assignment PIN_104 -to ADC_INPUT[10]
+set_location_assignment PIN_105 -to ADC_INPUT[9]
+set_location_assignment PIN_106 -to ADC_INPUT[8]
+set_location_assignment PIN_110 -to ADC_INPUT[7]
+set_location_assignment PIN_111 -to ADC_INPUT[6]
+set_location_assignment PIN_112 -to ADC_INPUT[5]
+set_location_assignment PIN_113 -to ADC_INPUT[4]
+set_location_assignment PIN_114 -to ADC_INPUT[3]
+set_location_assignment PIN_115 -to ADC_INPUT[2]
+set_location_assignment PIN_119 -to ADC_INPUT[1]
+set_location_assignment PIN_120 -to ADC_INPUT[0]
+set_location_assignment PIN_99 -to SPEAKER
+set_location_assignment PIN_11 -to pll_out
+set_location_assignment PIN_144 -to RMII_CLK
+set_location_assignment PIN_143 -to RMII_CRS_DV
+set_location_assignment PIN_7 -to RMII_Reset
+set_location_assignment PIN_141 -to RMII_RX[1]
+set_location_assignment PIN_142 -to RMII_RX[0]
+set_location_assignment PIN_136 -to RMII_TX[1]
+set_location_assignment PIN_137 -to RMII_TX[0]
+set_location_assignment PIN_135 -to RMII_TX_Enable
+set_global_assignment -name VHDL_FILE etherlink_pkg.vhd
+set_global_assignment -name QIP_FILE demod_clock.qip
+set_global_assignment -name VERILOG_FILE demod_clock.v
+set_global_assignment -name QSYS_FILE SFL_Flash.qsys
+set_global_assignment -name VERILOG_FILE hilbert_filter12.v
+set_global_assignment -name VERILOG_FILE fir.v -library fir
+set_global_assignment -name VERILOG_FILE shifter_iq_single.v
+set_global_assignment -name VERILOG_FILE shifter_iq.v
+set_global_assignment -name VERILOG_FILE Demodulator.v
+set_global_assignment -name VERILOG_FILE data_delay.v
+set_global_assignment -name VERILOG_FILE ADC2LedDebug.v
+set_global_assignment -name SIP_FILE fir.sip
+set_global_assignment -name QSYS_FILE cic.qsys
+set_global_assignment -name SOURCE_FILE fir.cmp
+set_global_assignment -name QIP_FILE fir.qip
+set_global_assignment -name QSYS_FILE nco.qsys
+set_global_assignment -name BDF_FILE UA3REO.bdf
+set_global_assignment -name SDC_FILE SDC.sdc
+set_global_assignment -name VERILOG_FILE DeltaSigmaDAC.v
+set_global_assignment -name VERILOG_FILE FrequencyRegister.v
+set_global_assignment -name QIP_FILE mixer.qip
+set_global_assignment -name QIP_FILE pll_test.qip
+set_location_assignment PIN_86 -to RST_BTN
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

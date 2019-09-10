@@ -1,0 +1,29 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\Dropbox\Develop\Projects\UA3REO\SFL_Flash.qsys --block-symbol-file --output-directory=D:\Dropbox\Develop\Projects\UA3REO\SFL_Flash --family="Cyclone IV E" --part=EP4CE10E22C8
+Progress: Loading UA3REO/SFL_Flash.qsys
+Progress: Reading input file
+Progress: Adding serial_flash_loader_0 [altera_serial_flash_loader 17.1]
+Progress: Parameterizing module serial_flash_loader_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\Dropbox\Develop\Projects\UA3REO\SFL_Flash.qsys --synthesis=VERILOG --output-directory=D:\Dropbox\Develop\Projects\UA3REO\SFL_Flash\synthesis --family="Cyclone IV E" --part=EP4CE10E22C8
+Progress: Loading UA3REO/SFL_Flash.qsys
+Progress: Reading input file
+Progress: Adding serial_flash_loader_0 [altera_serial_flash_loader 17.1]
+Progress: Parameterizing module serial_flash_loader_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: SFL_Flash: Generating SFL_Flash "SFL_Flash" for QUARTUS_SYNTH
+Info: serial_flash_loader_0: generating top-level entity altera_serial_flash_loader
+Info: serial_flash_loader_0: "SFL_Flash" instantiated altera_serial_flash_loader "serial_flash_loader_0"
+Info: SFL_Flash: Done "SFL_Flash" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

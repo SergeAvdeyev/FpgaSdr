@@ -1,0 +1,15 @@
+	component nios is
+		port (
+			clk_clk                                : in  std_logic                     := 'X'; -- clk
+			epcs_flash_controller_0_external_dclk  : out std_logic;                            -- dclk
+			epcs_flash_controller_0_external_sce   : out std_logic;                            -- sce
+			epcs_flash_controller_0_external_sdo   : out std_logic;                            -- sdo
+			epcs_flash_controller_0_external_data0 : in  std_logic                     := 'X'; -- data0
+			pio_0_external_connection_export       : out std_logic_vector(21 downto 0);        -- export
+			pio_mode_external_connection_export    : out std_logic;                            -- export
+			reset_reset_n                          : in  std_logic                     := 'X'; -- reset_n
+			uart_0_external_connection_rxd         : in  std_logic                     := 'X'; -- rxd
+			uart_0_external_connection_txd         : out std_logic                             -- txd
+		);
+	end component nios;
+

@@ -1,0 +1,6 @@
+	component SFL_Flash is
+		port (
+			noe_in : in std_logic := 'X'  -- noe
+		);
+	end component SFL_Flash;
+

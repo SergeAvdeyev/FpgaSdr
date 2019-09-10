@@ -1,0 +1,21 @@
+
+
+E:/Project/Radio/UA3REO_v1/UA3REO/fir.v
+
+Sep 10 12PM:37:17>: Megafunction FIR II v17.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/Project/Radio/UA3REO_v1/UA3REO/fir.v
+
+Sep 10 12PM:37:48>: Megafunction FIR II v17.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/Project/Radio/UA3REO_v1/UA3REO/fir.v
+
+Sep 10 12PM:38:29>: Megafunction FIR II v17.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+E:/Project/Radio/UA3REO_v1/UA3REO/fir.v
+
+Sep 10 12PM:39:54>: Megafunction FIR II v17.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

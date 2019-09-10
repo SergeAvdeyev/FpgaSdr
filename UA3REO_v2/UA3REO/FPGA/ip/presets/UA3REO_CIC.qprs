@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ip>
+ <presets version="12.1">
+  <preset name="UA3REO" kind="altera_cic_ii" version="All" description="UA3REO">
+   <parameter name="RCF_FIX" value="1024" />
+   <parameter name="ROUND_TYPE" value="TRUNCATE" />
+   <parameter name="STAGES" value="3" />
+   <parameter name="VRC_EN" value="0" />
+   <parameter name="CLK_EN_PORT" value="false" />
+   <parameter name="INTERFACES" value="1" />
+   <parameter name="IN_WIDTH" value="24" />
+   <parameter name="REQ_OUT_WIDTH" value="24" />
+   <parameter name="FILTER_TYPE" value="decimator" />
+   <parameter name="D_DELAY" value="1" />
+   <parameter name="CH_PER_INT" value="1" />
+  </preset>
+ </presets>
+</ip>

@@ -1,0 +1,16 @@
+BLOCK		START ADDRESS		END ADDRESS
+
+Page_0		0x00000000		0x00059D8A
+UA3REO.hex		0x00059D8B		0x00088213
+
+
+Configuration device: EP4CE10
+Configuration mode: Active Serial
+Quad-Serial configuration device dummy clock cycle: 8
+
+
+Notes:
+
+- Data checksum for this conversion is 0x18AB12EF
+
+- All the addresses in this file are byte addresses

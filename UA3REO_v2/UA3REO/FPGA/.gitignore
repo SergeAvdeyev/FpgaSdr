@@ -1,0 +1,5 @@
+/db/
+/incremental_db/
+/output_files/
+/ADC2LedDebug.v.bak
+/Demodulator.v.bak
